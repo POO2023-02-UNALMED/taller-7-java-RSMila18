@@ -18,24 +18,31 @@ public class Libro extends Escrito{
 	public String getCo_autor() {
 		return co_autor;
 	}
+	
 	public void setCo_autor(String co) {
 		this.co_autor = co;
 	}
+	
 	public String getEditorial() {
 		return editorial;
 	}
+	
 	public void setEditorial(String editorial) {
 		this.editorial = editorial;
 	}
+	
 	public String getEdicion() {
 		return edicion;
 	}
+	
 	public void setEdicion(String edicion) {
 		this.edicion = edicion;
 	}
+	
 	public String getInterpretacion() {
 		return interpretacion;
 	}
+	
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
@@ -44,9 +51,11 @@ public class Libro extends Escrito{
 		int cant = super.getPaginas() * count * 2;
 		return cant;
 	}
+	
 	public String interpretacion() {
 		return interpretacion;
 	}
+	
 	public String toString() {
 		String m = super.getOrigen() + "\n";
 		m += super.getTitulo() + "\n";
@@ -57,6 +66,4 @@ public class Libro extends Escrito{
 		m += this.edicion;
 		return m;
 	}
-	
-
 }
